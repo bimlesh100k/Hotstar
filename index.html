@@ -317,6 +317,32 @@ div::-webkit-scrollbar {
   width: 300px;
  }
  
+.fnav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+ 
+  background-color: rgb(6, 0, 22);
+  padding: 5px 15px;
+  visibility: hidden;
+  font-size: 10px;
+  
+
+  
+ }
+ .boxx
+ {
+text-align: center;
+margin-bottom: 5px;
+color: white;
+
+ }
+ .boxx a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+ }
  @media screen and (max-width: 768px) {
     #detail {
       display: none;
@@ -327,6 +353,11 @@ div::-webkit-scrollbar {
     .navlink{
       display: none;
     }
+    .fnav{
+      visibility: visible;
+      
+    }
+    
   }
 </style>
 
@@ -858,6 +889,31 @@ div::-webkit-scrollbar {
     </div>
   </div>
 </footer>
+  <div class="container-fluid fnav navbar-fixed-bottom">
+  <div class="boxx">
+    
+    <i class="fa-solid fa-house"></i><br>
+    <a href="">Home</a>
+
+  </div>
+  <div class="boxx">
+    
+    <i class="fa-solid fa-tv"></i><br>
+    <a href="">TV</a>
+
+  </div>
+  <div class="boxx">
+    <img src="image/dl.svg" alt="">
+  </div>
+  <div class="boxx">
+    <i class="fa-solid fa-video"></i><br>
+    <a href="">Movies</a>
+  </div>
+  <div class="boxx">
+    <i class="fa-solid fa-volleyball"></i><br>
+    <a href="Sports">Sports</a>
+  </div>
+</div>
 </body>
 
 </html>
