@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<style>
+  body,
+  html {
+    background-color: rgb(6, 1, 32);
+    font-family: 'Poppins', sans-serif;
+    font-size: 100%;
+  }
+
+  #navb {
+    background-color: rgb(8, 0, 49);
+    
+
+  }
+
+  .dlogo {
+    width: 130px;
+    color: white;
+    margin-left: 20px;
+  }
+
+  .s1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(8, 0, 29);
+  }
+
+  #detail {
+    background-color: rgb(8, 0, 29);
+
+    font-size: 2rem;
+    color: white;
+    display: block;
+
+
+  }
+  .navlink{
+    display: block;
+  }
+
+  #detail h3 {
+    font-size: 3rem;
+  }
+
+  #detail p {
+    font-size: 1rem;
+  }
+
+
+  .sliderr {
+    width: 97%;
+
+    margin: auto;
+    margin-top: 15px;
+  }
+
+  .navsearch {
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    border-radius: 0;
+    outline: none;
+    color: white;
+
+  }
+
+  .navsearch::placeholder {
+    color: white;
+  }
+
+  .ham {
+    color: white;
+    font-size: 25px;
+    position: relative;
+    top: 3px;
+
+  }
+  .dropdown-item i
+  {
+    padding: 5px;
+  }
+  
+
+  .play {
+    margin: 0px 10px;
+    font-family: 'Poppins', sans-serif;
+
+  }
+  .modal-body
+  {
+    text-align: center;
+    margin: 30px 0px;
+  }
+  .box1
+  {
+    border: 3px solid rgb(68, 29, 209);
+    margin:20px 0px;
+    border-radius: 10px;
+    padding: 10px ;
+  }
+  .modal-dialog
+  {
+    background-color: rgb(8, 0, 29);
+  }
+  .modal-content 
+  {
+    background-color: rgb(8, 0, 29);
+    color: white;
+
+  }
+  .modal-body input{
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    border-bottom: 2px solid white;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px 10px;
+  }
+  .modal-body button
+  {
+     padding: 6px 60px;
+     font-size: 24px;
+     background-color: rgb(16, 1, 70);
+     border-radius: 10px;
+     outline: none;
+     border: none;
+     color: white;
+  }
+  .row1
+  {
+    margin: 10px 5px;
+  }
+
+
+
+  .slider
+{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   margin: auto;
+    overflow-y: auto;
+}
+ .box img{
+    height: 200px;
+    
+  
+   transition: transform 0.3s ease-in;
+   z-index: 99;
+   
+   margin: 30px 0px;
+   border-radius: 5px;
+}
+
+.box img:hover
+{
+    transform: scale(1.3);
+}
+div::-webkit-scrollbar {
+    overflow: hidden; 
+  }
+  section .row1{
+    position: relative;
+    top: 35px;
+  }
+ .heading
+ {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+ }
+ .slide2{
+  position:relative;
+  top: -50px;
+  
+ }
+ .v1
+ {
+  width: 100%;
+  
+  
+ }
+ .v2
+ {
+  background-color: black;
+ }
+ .hover
+ {
+  width: 90%;
+  margin: auto;
+ }
+ .col1
+ {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(6, 1, 32);
+  margin: 0px 10px;
+  height: 120px;
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 1000;
+  border-radius: 10px;
+  color: white;
+  border: 1px solid white;
+  transition: transform 0.3s ease-in;
+  margin-top: 7px;
+ }
+ .col1:hover
+ {
+  transform: scale(1.2);
+ }
+ .foot
+ {
+  width: 98%;
+  margin: auto;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  color: white;
+  margin-bottom: 40px;
+  border-bottom: 1px solid white;
+  padding-bottom: 15px;
+
+ }
+ .bx1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: auto;
+  position: relative;
+  top: 0;
+
+
+ }
+ .bx1 video
+ {
+  width: 100%;
+  
+ }
+ .mix
+ {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  mix-blend-mode: screen;
+  height: 100%;
+  font-size: 20vw;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ .video
+ {
+  width: 100%;
+  background-color: white;
+ }
+ .col2 ul
+ {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ }
+ .col2 i{
+  display: inline-block;
+  padding: 10px;
+ 
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  border: 1px solid white;
+ }
+ .navlink
+ {
+  list-style: none;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-around;
+  width: 300px;
+  
+  position: absolute;
+  top: 10px;
+  left: 200px;
+ }
+ .dmovies
+ {
+  position: relative;
+  margin-top: -80px;
+ }
+ .col2 img{
+  width: 300px;
+ }
+ 
+ @media screen and (max-width: 768px) {
+    #detail {
+      display: none;
+    }
+    .navsearch{
+      display: none;
+    }
+    .navlink{
+      display: none;
+    }
+  }
+</style>
+
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar" id="navb">
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content ">
+          
+          <div class="modal-body">
+            <h4>Login to continue</h4>
+            <div class="box1">
+              Have a Facebook/Email account?
+            </div>
+            <input type="text"placeholder="Enter your number">
+            <br>
+            <button>Continue</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" id="navb">
+
+     
+      <div class="dropdown">
+          <i class="fa-solid fa-bars ham" data-bs-toggle="dropdown" aria-expanded="false"></i>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#"><i class="fa-solid fa-users"></i>Channels</a></li>
+          <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-language"></i>Language</a></li>
+          <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-masks-theater"></i> Genres</a></li>
+        </ul>
+        <img src="image/dl.svg" class="dlogo" alt=""></a>
+        <ul class="navlink">
+          <li>Home</li>
+          <li>About</li>
+          <li>Kids</li>
+          <li>Special</li>
+        </ul>
+      </div>
+      
+      <form class="d-flex" role="search">
+        <input class=" navsearch" type="text" placeholder="Search" >
+       <h5 class="text-white mt-3 navbar-toggler" type="button" data-bs-toggle="modal"
+       data-bs-target="#exampleModal">Login</h5>
+      </form>
+    </div>
+  </nav>
+  <!-- navbar end -->
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner sliderr">
+      <div class="carousel-item active " data-bs-interval="10000">
+
+        <div class="s1 row ">
+          <div class="col-md-7">
+            <img src="/image/s1.webp" class="d-block w-100  " alt="...">
+          </div>
+
+          <div class="card col-md-5" id="detail">
+            <h3 class="card-header">Black Panther</h3>
+            <div class="card-body">
+              <h5 class="card-title">Hindi . Thriller . 2022</h5>
+              <p class="card-text">Queen Ramonda, Shuri, M’Baku, Okoye and the Dora Milaje fight to protect their nation
+                from intervening world powers after the death of beloved King T’Challa.</p>
+              <i class="fa-solid fa-play "><span class="play">WATCH NOW</span></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item " data-bs-interval="2000">
+        <div class="s1 row">
+          <div class="col-md-7">
+            <img src="/image/s2.webp" class="d-block w-100 " alt="...">
+          </div>
+          <div class="card col-md-5" id="detail">
+            <h3 class="card-header">Drishyam</h3>
+            <div class="card-body">
+              <h5 class="card-title">Hindi . Thriller . 2022</h5>
+              <p class="card-text">When the disappearance of a policewoman's son threatens to ruin Vijay's family, he
+                leaves no stone unturned in order to shield his family.</p>
+              <i class="fa-solid fa-play "><span class="play">WATCH NOW</span></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item ">
+        <div class="s1 row">
+          <div class="col-md-7">
+            <img src="/image/s3.webp" class="d-block w-100 " alt="...">
+          </div>
+          <div class="card col-md-5" id="detail">
+            <h3 class="card-header">Dear Ishq</h3>
+            <div class="card-body">
+              <h5 class="card-title">Romance</h5>
+              <p class="card-text">NEW EPISODES MONDAY TO SATURDAY. Famous author Abhimanyu gets swept up in a cutthroat
+                challenge with Asmita, for whom life is beyond paperback fiction. In the face of rivalry, will love
+                bloom?</p>
+              <i class="fa-solid fa-play "><span class="play">WATCH NOW</span></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- slider start -->
+  
+
+  <section >
+    <div class="heading">
+  <h4 class="row1 p-1  text-light ">Hotstar Special</h4>
+  <h4 class="row1 p-1  text-light ">More</h4>
+</div>
+  <div class=" slider" >
+    
+    <div class="box mx-2 ">
+      <img src="image/sp1.webp" alt="">
+     
+    </div>
+    <div class="box mx-2">
+      <img src="image/sp2.webp" alt="">
+    </div>
+    <div class="box mx-2">
+      <img src="image/sp3.webp" alt="">
+    </div>
+    <div class="box mx-2">
+      <img src="image/sp4.webp" alt="">
+    </div>
+    <div class="box mx-2">
+      <img src="image/sp5.webp" alt="">
+    </div>
+    <div class="box mx-2">
+      <img src="image/sp6.webp" alt="">
+    </div>
+    <div class="box mx-2">
+      <img src="image/sp7.webp" alt="">
+    </div>
+    <div class="box mx-2">
+      <img src="image/sp8.webp" alt="">
+    </div>
+    <div class="box mx-2">
+      <img src="image/sp9.jpg" alt="">
+    </div>
+    <div class="box mx-2">
+      <img src="image/sp10.webp" alt="">
+    </div>
+    <div class="box mx-2">
+      <img src="image/sp11.webp" alt="">
+    </div>
+    <div class="box mx-2">
+      <img src="image/sp12.webp" alt="">
+    </div>
+    <div class="box mx-2">
+      <img src="image/sp13.webp" alt="">
+    </div>
+   
+  </div>
+</section>
+<!-- 2nd -->
+<section class="slide2" >
+  <div class="heading">
+<h4 class="row1 p-1  text-light ">Best of Kids</h4>
+<h4 class="row1 p-1  text-light ">More</h4>
+</div>
+<div class=" slider" >
+  
+  <div class="box mx-2 ">
+    <img src="image/k1.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/k12.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/k2.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/k3.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/k4.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/k5.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/k7.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/k8.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/k9.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/k13.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/k10.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/k11.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/k12.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/k13.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/k14.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/gro1.jpg" alt="">
+  </div>
+</div>
+</section>
+<section class="video">
+  <div class="bx1 container row">
+   
+    <div class="col ">
+      <video src="video/pexels-alan-w-8671564.mp4" class="v1" autoplay loop></video>
+      <div class="mix">
+        Hotstar
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 3rd -->
+<section >
+  <div class="heading">
+<h4 class="row1 p-1  text-light ">Best of Crime</h4>
+<h4 class="row1 p-1  text-light ">More</h4>
+</div>
+<div class=" slider" >
+  
+  <div class="box mx-2 ">
+    <img src="image/c1.webp" alt="">
+   
+  </div>
+  <div class="box mx-2">
+    <img src="image/c2.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/c3.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/c4.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/c5.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/c6.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/c7.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/c8.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/c9.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/c10.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/c11.webp" alt="">
+  </div>
+</div>
+</section>
+<!-- 2nd -->
+<section class="slide2" >
+<div class="heading">
+<h4 class="row1 p-1  text-light ">Explore Universe</h4>
+<h4 class="row1 p-1  text-light ">More</h4>
+</div>
+<div class=" slider" >
+
+<div class="box mx-2 ">
+  <img src="image/u1.webp" alt="">
+</div>
+<div class="box mx-2">
+  <img src="image/u2.webp" alt="">
+</div>
+<div class="box mx-2">
+  <img src="image/u3.webp" alt="">
+</div>
+<div class="box mx-2">
+  <img src="image/u4.webp" alt="">
+</div>
+<div class="box mx-2">
+  <img src="image/u5.webp" alt="">
+</div>
+<div class="box mx-2">
+  <img src="image/u6.webp" alt="">
+</div>
+<div class="box mx-2">
+  <img src="image/u7.webp" alt="">
+</div>
+<div class="box mx-2">
+  <img src="image/u8.webp" alt="">
+</div>
+<div class="box mx-2">
+  <img src="image/u9.webp" alt="">
+</div>
+<div class="box mx-2">
+  <img src="image/u10.webp" alt="">
+</div>
+<div class="box mx-2">
+  <img src="image/u11.webp" alt="">
+</div>
+
+</div>
+</section>
+<section class="dmovies" >
+  <div class="heading">
+<h4 class="row1 p-1  text-light ">Disney Movies</h4>
+<h4 class="row1 p-1  text-light ">More</h4>
+</div>
+<div class=" slider" >
+  
+  <div class="box mx-2 ">
+    <img src="image/d1.webp" alt="">
+   
+  </div>
+  <div class="box mx-2">
+    <img src="image/d2.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/d3.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/d4.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/d5.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/d6.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/d7.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/d8.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/d9.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/d10.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/d11.webp" alt="">
+  </div>
+</div>
+</section>
+<!-- 2nd -->
+<section class="slide2" >
+<div class="heading">
+<h4 class="row1 p-1  text-light ">Marvel Series</h4>
+<h4 class="row1 p-1  text-light ">More</h4>
+</div>
+<div class=" slider" >
+
+<div class="box mx-2 ">
+  <img src="image/h1.jpg" alt="">
+</div>
+<div class="box mx-2">
+  <img src="image/gro1.jpg" alt="">
+</div>
+<div class="box mx-2">
+  <img src="image/hs.jpg" alt="">
+</div>
+<div class="box mx-2">
+  <img src="image/mm.jpg" alt="">
+</div>
+<div class="box mx-2">
+  <img src="image/mn.jpg" alt="">
+</div>
+<div class="box mx-2">
+  <img src="image/up6.jpg" alt="">
+</div>
+<div class="box mx-2">
+  <img src="image/up5.webp" alt="">
+</div>
+<div class="box mx-2">
+  <img src="image/up4.jpg" alt="">
+</div>
+<div class="box mx-2">
+  <img src="image/up2.jpg" alt="">
+</div>
+<div class="box mx-2">
+  <img src="image/up3.jpg" alt="">
+</div>
+</div>
+</section>
+<!-- hover -->
+<div class="hover">
+  <h4 class="text-white">Select Language</h4>
+  <div class="row">
+    <div class="col col1 ">
+     Hindi
+    </div>
+    <div class="col col1">English</div>
+    <div class="col col1">Malyalam</div>
+    <div class="col col1">Punjabi</div>
+    <div class="col col1">Kannada</div>
+  </div>
+</div>
+<!-- end -->
+<section >
+  <div class="heading">
+<h4 class="row1 p-1  text-light ">Mythology Shows</h4>
+<h4 class="row1 p-1  text-light ">More</h4>
+</div>
+<div class=" slider" >
+  
+  <div class="box mx-2 ">
+    <img src="image/m1.webp" alt="">
+   
+  </div>
+  <div class="box mx-2">
+    <img src="image/m2.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/m3.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/m4.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/m5.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/m6.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/m7.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/m8.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/m9.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/m10.webp" alt="">
+  </div>
+  <div class="box mx-2">
+    <img src="image/m11.webp" alt="">
+  </div>
+</div>
+</section>
+<!-- 2nd -->
+<section class="slide2" >
+<div class="heading">
+<h4 class="row1 p-1  text-light ">Marvel movies</h4>
+<h4 class="row1 p-1  text-light ">More</h4>
+</div>
+<div class=" slider" >
+
+<div class="box mx-2 ">
+  <img src="image/th1.jpg" alt="">
+</div>
+<div class="box mx-2">
+  <img src="image/gr1.jpg" alt="">
+</div>
+<div class="box mx-2">
+  <img src="image/dr1.jpg" alt="">
+</div>
+<div class="box mx-2">
+  <img src="image/an1.jpg" alt="">
+</div>
+<div class="box mx-2">
+  <img src="image/ap1.jpg" alt="">
+</div>
+<div class="box mx-2">
+  <img src="image/hs1.jpg" alt="">
+</div>
+<div class="box mx-2">
+  <img src="image/up5.jpg" alt="">
+</div>
+<div class="box mx-2">
+  <img src="image/mn.jpg" alt="">
+</div>
+<div class="box mx-2">
+  <img src="image/h1.jpg" alt="">
+</div>
+<div class="box mx-2">
+  <img src="image/up3.jpg" alt="">
+</div>
+</div>
+</section>
+<footer>
+  <div class="row foot">
+    <div class="col-sm-7 col2">
+      <ul>
+        <li>About Disney+ Hotstar</li>
+      <li>Terms Of Use</li>
+      <li>Privacy Policy</li>
+      <li>FAQ</li>
+      <li>Feedback</li>
+    </ul>
+    <p class="small">© 2023 STAR. All Rights Reserved. HBO, Home Box Office and all related channel and programming logos are service marks of, and all related programming visuals and elements are the property of, Home Box Office, Inc. All rights reserved.</p>
+    </div>
+    <div class="col-sm col2">
+      <p>Connect with us</p>
+      <i class="fa-brands fa-twitter "></i>
+      <i class="fa-brands fa-facebook "></i>
+    </div>
+    <div class="col-sm col2 mt-5">
+      <p>Disney+ Hotstar App</p>
+      <img src="image/PngItem_1160632.png"  alt="">
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>
