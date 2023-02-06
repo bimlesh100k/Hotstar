@@ -261,27 +261,27 @@ div::-webkit-scrollbar {
  }
  .bg0,.bg1,.bg2,.bg3,.bg4
  {
-  background-image: url(image/m9.webp);
+  background-image: url(./image/m9.webp);
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
  }
  .bg1{
-  background-image: url(image/ap1.jpg);
+  background-image: url(./image/ap1.jpg);
   background-position: center;
  }
  .bg2{
-  background-image: url(image/m11.webp);
+  background-image: url(./image/m11.webp);
   background-position: top;
  }
  .bg3
  {
-  background-image: url(image/sp11.webp);
+  background-image: url(./image/sp11.webp);
   background-position: top;
  }
  .bg4
  {
-  background-image: url(image/c11.webp);
+  background-image: url(./image/c11.webp);
   background-position: top;
  }
  .bx1 {
